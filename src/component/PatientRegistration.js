@@ -17,7 +17,7 @@ function PatientRegistrtation(){
     const getPatient=()=>{
         let request = axios({
             method: "GET",
-            url: "http://localhost:3010/getuser",
+            url: "https://arogya-api.onrender.com/getuser",
             headers: {
                 "x-auth-token": token
             },
@@ -40,7 +40,7 @@ function PatientRegistrtation(){
         const pat= {name,age,gender,state,city}
         let request = axios({
             method: "POST",
-            url: "http://localhost:3010/addpatient",
+            url: "https://arogya-api.onrender.com/addpatient",
             data: pat,
             headers: {
                 "x-auth-token": token

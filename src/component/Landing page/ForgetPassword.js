@@ -7,7 +7,7 @@ function ForgotPassword() {
   const history = useHistory()
   const { register, handleSubmit, errors } = useForm()
   const setPass = (data) => {
-    axios.post("http://localhost:3010/setpassword",data).then(res => {
+    axios.post("https://arogya-api.onrender.com/setpassword",data).then(res => {
       if(res.data === 'noUser'){
         history.push("/register/nouser")
       }else{

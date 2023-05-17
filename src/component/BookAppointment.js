@@ -48,7 +48,7 @@ class BookAppointment extends React.Component {
         let token = localStorage.getItem("patientAuth");
         let request = axios({
             method: "GET",
-            url: "http://localhost:3010/getuser",
+            url: "https://arogya-api.onrender.com/getuser",
             headers: {
                 "x-auth-token": token
             },

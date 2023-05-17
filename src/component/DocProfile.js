@@ -35,7 +35,7 @@ function DocProfile() {
 
             let request = axios({
                   method: "GET",
-                  url: "http://localhost:3010/getdoctor",
+                  url: "https://arogya-api.onrender.com/getdoctor",
                   headers: {
                         "x-auth-token": token
                   },
@@ -55,7 +55,7 @@ function DocProfile() {
                   const doc = { name, email, image, bio, hospital, address, fees }
                   let request = axios({
                         method: "POST",
-                        url: "http://localhost:3010/updateprofile",
+                        url: "https://arogya-api.onrender.com/updateprofile",
                         data: doc,
                         headers: {
                               "x-auth-token": token

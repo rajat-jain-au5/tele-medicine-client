@@ -23,7 +23,7 @@ function Navbar() {
     localStorage.removeItem('setSplash')
   }
   const onSubmit = (data) => {
-    axios.post("http://localhost:3010/verify", data).then(res => {
+    axios.post("https://arogya-api.onrender.com/verify", data).then(res => {
       if(res.data){
         toast.success('We have Sent you a Mail, Please Verify', { position: toast.POSITION.TOP_RIGHT, autoClose: 5000 })
       }else{
@@ -36,7 +36,7 @@ function Navbar() {
 
   const onLogin = (data) => {
     console.log("login",data)
-    axios.post("http://localhost:3010/login", data).then(res => {
+    axios.post("https://arogya-api.onrender.com/login", data).then(res => {
       console.log("nav 41", res.data)
       if(res.data){
         if(res.data === "incorrectPassword") {

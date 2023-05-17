@@ -29,7 +29,7 @@ class Dashboard extends Component {
       searchTerm: val
     })
     axios
-      .get(`http://localhost:3010/doctorname/${val}`,
+      .get(`https://arogya-api.onrender.com/doctorname/${val}`,
         {
           headers: {
             "x-auth-token": localStorage.getItem("patientAuth"),

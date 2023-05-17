@@ -24,7 +24,7 @@ class Video extends React.Component {
   videoCall = new VideoCall();
 
   componentDidMount() {
-    const socket = io('http://localhost:3010/');
+    const socket = io('https://arogya-api.onrender.com/');
     const component = this;
     this.setState({ socket });
     const { roomId } = this.props.match.params.id

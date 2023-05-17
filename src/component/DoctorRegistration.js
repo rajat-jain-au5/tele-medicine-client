@@ -69,7 +69,7 @@ function DoctorRegistration() {
         // console.log(doc)
         let request = axios({
             method: "POST",
-            url: "http://localhost:3010/adddoctor",
+            url: "https://arogya-api.onrender.com/adddoctor",
             data: doc,
             headers: {
                 "x-auth-token": token
