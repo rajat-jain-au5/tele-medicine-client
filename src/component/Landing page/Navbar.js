@@ -111,7 +111,7 @@ function Navbar() {
           }
           {
             localStorage.getItem("patientAuth")?
-                <a  href="/" onClick ={logoutUser} className="btn btn-warning mr-5 mb-5">
+                <a  href="/" onClick ={logoutUser} className="btn btn-warning mr-5">
                   <b>Logout</b>
                 </a>
                 : localStorage.getItem("doctorAuth")
