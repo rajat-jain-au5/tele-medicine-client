@@ -16,7 +16,7 @@ function ChangePass(){
         delete data.cPassword
         axios.post("https://arogya-api.onrender.com/setpass",data).then(res => {
             if(res.data === 'expired'){
-              history.push("http://localhost:3000/register/expired")
+              history.push("https://arogya-app.onrender.com/register/expired")
             }
             if(res.data === 'passwordSuccess'){
               history.push('register/newpassword')
